@@ -13,6 +13,8 @@ plugins {
 
 group = "software.amazon.dsql"
 
+val targetJavaVersion = project.property("targetJavaVersion").toString().toInt()
+
 repositories {
     mavenCentral()
 }
@@ -100,6 +102,7 @@ tasks.register<Test>("integrationTest") {
 
 tasks.withType<JavaCompile> {
     options.encoding = "UTF-8"
+    options.release = targetJavaVersion
 }
 
 // SpotBugs configuration temporarily disabled for Brazil build compatibility
@@ -141,6 +144,11 @@ publishing {
                         organizationUrl.set("https://aws.amazon.com")
                     }
                 }
+
+                properties.set(mapOf(
+                    "maven.compiler.source" to targetJavaVersion.toString(),
+                    "maven.compiler.target" to targetJavaVersion.toString()
+                ))
             }
         }
     }
