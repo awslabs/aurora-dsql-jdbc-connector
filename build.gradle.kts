@@ -83,9 +83,9 @@ tasks.named<Test>("test") {
     // Set test timeout
     systemProperty("junit.jupiter.execution.timeout.default", "5m")
     systemProperty("junit.jupiter.execution.timeout.testable.method.default", "2m")
-    
+
     // Always run when invoked directly
-    outputs.upToDateWhen { 
+    outputs.upToDateWhen {
         gradle.startParameter.taskNames.none { it == "test" || it == ":test" }
     }
 }
@@ -94,9 +94,9 @@ tasks.named<Test>("test") {
 tasks.register<Test>("integrationTest") {
     description = "Runs integration tests against live Aurora DSQL cluster"
     group = "verification"
-    
+
     System.setProperty("runIntegrationTests", "true")
-    
+
     dependsOn(":integration-tests:test")
 }
 
