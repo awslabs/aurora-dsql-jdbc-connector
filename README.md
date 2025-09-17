@@ -180,9 +180,9 @@ This project uses Gradle 8.13 and follows the same build patterns as other AWS A
 ### Build Artifacts
 
 The build generates the following artifacts:
-- Main library JAR
-- Source code JAR
-- Javadoc JAR
+- `aurora-dsql-jdbc-connector-<VERSION>.jar` - Main library JAR
+- `aurora-dsql-jdbc-connector-<VERSION>-sources.jar` - Source code JAR
+- `aurora-dsql-jdbc-connector-<VERSION>-javadoc.jar` - Javadoc JAR
 
 ### Code Quality
 
