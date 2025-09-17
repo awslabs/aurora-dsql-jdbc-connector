@@ -154,6 +154,7 @@ jobs:
       working-directory: integration-tests
       env:
         USE_MAVEN_LOCAL: "true"
+        PROJECT_VERSION: 0.0.0-SNAPSHOT
         REGION: ${{ secrets.AURORA_DSQL_INTEGRATION_CLUSTER_REGION }}
         CLUSTER_ENDPOINT: ${{ needs.create-cluster.outputs.cluster-id }}.dsql.${{ secrets.AURORA_DSQL_INTEGRATION_CLUSTER_REGION }}.on.aws
         CLUSTER_USER: "admin"
