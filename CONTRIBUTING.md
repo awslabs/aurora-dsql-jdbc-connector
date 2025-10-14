@@ -41,7 +41,6 @@ GitHub provides additional document on [forking a repository](https://help.githu
 ### Prerequisites
 
 * Java 25 or higher
-* Gradle 8.14 or higher (included via Gradle connector)
 * Git
 
 ### Building the Project
@@ -86,7 +85,6 @@ Integration tests require a real Aurora DSQL cluster and AWS credentials:
 ```bash
 # Set required environment variables
 export CLUSTER_ENDPOINT=your-cluster-endpoint.dsql.us-east-1.on.aws
-export REGION=us-east-1
 
 # Optional: Set custom user (defaults to 'admin')
 export CLUSTER_USER=your-username
