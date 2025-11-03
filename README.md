@@ -125,13 +125,11 @@ java.util.logging.SimpleFormatter.format = %1$tH:%1$tM:%1$tS.%1$tL [%4$s] %3$s -
 
 ## Examples
 
-| Description | Examples                                                                                                                                                                                                               |
-|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Using the Aurora DSQL Connector for JDBC for basic connections with multiple configuration methods | [BasicConnectionExample](https://github.com/aws-samples/aurora-dsql-samples/tree/main/java/pgjdbc_using_dsql_connector/src/main/java/com/amazon/dsql/samples/BasicConnectionExample.java)                     |
-| Using the Aurora DSQL Connector for JDBC with custom AWS credentials providers | [CustomCredentialsProviderExample](https://github.com/aws-samples/aurora-dsql-samples/tree/main/java/pgjdbc_using_dsql_connector/src/main/java/com/amazon/dsql/samples/CustomCredentialsProviderExample.java) |
-| Using HikariCP with the Aurora DSQL Connector for JDBC for production-ready connection pooling | [HikariCP Example](https://github.com/aws-samples/aurora-dsql-samples/tree/main/java/pgjdbc_hikaricp_using_dsql_connector/src/main/java/org/example/Example.java)                                                      |
-| Using Spring Boot with HikariCP and the Aurora DSQL Connector for JDBC | [Spring Boot HikariCP Example](https://github.com/aws-samples/aurora-dsql-samples/tree/main/java/springboot_hikaricp_using_dsql_connector)                                                                             |
-
+| Description | Examples |
+|-------------|----------|
+| Using the Aurora DSQL Connector for JDBC for basic connections | [Basic JDBC Connector Example](https://github.com/aws-samples/aurora-dsql-samples/tree/main/java/pgjdbc) |
+| Using HikariCP for connection pooling and the Aurora DSQL connector for JDBC | [HikariCP with DSQL Connector](https://github.com/aws-samples/aurora-dsql-samples/tree/main/java/pgjdbc_hikaricp) |
+| Using Spring Boot with HikariCP and the Aurora DSQL connector for JDBC | [Spring Boot HikariCP Example](https://github.com/aws-samples/aurora-dsql-samples/tree/main/java/spring_boot)                                                                             |
 
 ## Getting Help and Opening Issues
 If you encounter a bug with the Aurora DSQL Connector for JDBC, we would like to hear about it.
